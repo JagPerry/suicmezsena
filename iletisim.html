@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>İletişim - Film Sitesi</title>
+  <link rel="stylesheet" href="style.css"> 
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: rgba(221, 211, 211, 0.857);
+    }
+
+    .navbar {
+      background: white;
+      color: black;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar a {
+      color: rgb(18, 16, 16);
+      margin-left: 15px;
+      text-decoration: none;
+    }
+
+    .content {
+      padding: 40px 20px;
+    }
+
+    .content h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    .content h2 {
+      text-align: center;
+      color: #666;
+      margin-bottom: 30px;
+    }
+
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    form label {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    form input,
+    form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      border: 1px solid #ddd;
+      box-sizing: border-box;
+    }
+
+    form button {
+      padding: 12px 20px;
+      background-color: #333;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    form button:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <h1>Film Time</h1>
+    <div>
+      <a href="index.html">Ana Sayfa</a>
+      <a href="kategoriler.html">Kategoriler</a>
+      <a href="filminceleme.html">Film İnceleme</a>
+      <a href="siteyekayit.html">Kayit Ol</a>
+      <a href="iletisim.html">İletişim</a>
+    </div>
+  </div>
+
+  <div class="content">
+    <h1>Bize Ulaşın</h1>
+    <h2>senasuicmez00@gmail.com</h2>
+    <form action="mailto:senasuicmez00@gmail.com" method="post" enctype="text/plain">
+      <label>Adınız:</label><br>
+      <input type="text" name="ad" required><br>
+
+      <label>Email: </label><br>
+      <input type="email" name="email" required><br>
+
+      <label>Mesaj:</label><br>
+      <textarea name="mesaj" rows="5" required></textarea><br>
+
+      <button type="submit">Gönder</button>
+    </form>
+  </div>
+
+</body>
+</html>

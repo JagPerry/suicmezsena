@@ -1,0 +1,203 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: rgba(221, 211, 211, 0.857);
+  }
+  
+  .navbar {
+    background: white;
+    color: black;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar a {
+    color: rgb(18, 16, 16);
+    margin-left: 15px;
+    text-decoration: none;
+  }
+  
+  .content {
+    padding: 20px;
+  }
+  
+  .film {
+    background: black;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+  }
+  
+  .film img {
+    width: 50%;
+    max-width: 150px;
+    margin-bottom: 5px;
+  }
+  
+  form input, form textarea, form button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+  }
+  .baslik {
+    text-align: center;
+    font-size: 32px;
+    margin: 20px 0;
+    color:rgb(212, 202, 202);
+  }
+  
+  .kategori-galeri {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+  }
+  
+  .kategori {
+    text-align: center;
+    width: 50px;
+  }
+  
+  .kategori img {
+    width: 180px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: 0.3s;
+  }
+  
+  .kategori img:hover {
+    transform: scale(1.05);
+  }
+  
+  .kategori p {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #444;
+  }
+  .kayit-formu {
+    max-width: 400px;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.kayit-formu h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.kayit-formu label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    color: #333;
+}
+
+.kayit-formu input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.kayit-formu button {
+    width: 100%;
+    padding: 12px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.kayit-formu button:hover {
+    background-color: #555;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: rgba(221, 211, 211, 0.857);
+}
+
+.navbar {
+    background: white;
+    color: black;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar a {
+    color: rgb(18, 16, 16);
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+.content {
+    padding: 20px;
+}
+
+.kayit-formu {
+    max-width: 400px;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.kayit-formu h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.kayit-formu label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    color: #333;
+}
+
+.kayit-formu input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.kayit-formu button {
+    width: 100%;
+    padding: 12px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.kayit-formu button:hover {
+    background-color: #555;
+}
+
+#sonuc {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+}

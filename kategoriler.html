@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kategoriler - Film Sitesi</title>
+  <style>
+    body {
+      background-color: rgba(221, 211, 211, 0.857);
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: left;
+      font-size: 24px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 30px;
+    }
+
+    th, td {
+      border: 1px solid #000;
+      padding: 10px;
+      text-align: left;
+      font-size: 16px;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+
+    .film-container {
+      display: flex;
+      gap: 30px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 40px;
+    }
+
+    .film-card {
+      width: 160px;
+      text-align: center;
+    }
+
+    .film-card img {
+      width: 100%;
+      border-radius: 5px;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .film-card p {
+      font-weight: bold;
+      margin-top: 8px;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 5px black;
+    }
+
+    .navbar div a {
+      margin-left: 15px;
+      text-decoration: none;
+      color: black;
+    }
+
+    .navbar div a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <h1>Film Time</h1>
+    <div>
+      <a href="index.html">Ana Sayfa</a>
+      <a href="kategoriler.html">Kategoriler</a>
+      <a href="filminceleme.html">Film İnceleme</a>
+      <a href="siteyekayit.html">Kayıt Ol</a>
+      <a href="iletisim.html">İletişim</a>
+    </div>
+  </div>
+
+  <div class="content">
+    <h2 style="text-align: left;">Film Kategorileri</h2>
+
+    <table>
+      <tr>
+        <th>Kategori</th>
+        <th>Örnek Filmler</th>
+      </tr>
+      <tr>
+        <td><b><u>Aksiyon</u></b></td>
+        <td>Inception, Avatar, Kara Şövalye</td>
+      </tr>
+      <tr>
+        <td><b><u>Dram</u></b></td>
+        <td>Memento, Gladyatör</td>
+      </tr>
+      <tr>
+        <td><b><u>Komedi</u></b></td>
+        <td>G.O.R.A, Can Dostum</td>
+      </tr>
+      <tr>
+        <td><b><u>Korku</u></b></td>
+        <td>The Witch, Ritüel</td>
+      </tr>
+      <tr>
+        <td><b><u>Animasyon</u></b></td>
+        <td>Buz Devri, Coco, Vahşi Robot</td>
+      </tr>
+    </table>
+
+  </div>
+
+  <div class="film-container">
+    <div class="film-card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8jIZ4ghU8MiF_BbvSUquG7zEDzlA_rXiqnA&s" alt="Aksiyon">
+      <p>Aksiyon</p>
+    </div>
+    <div class="film-card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRipDHeRRj9YkRTu1ED6LBsnIXWKONbPdJHVw&s" alt="Komedi">
+      <p>Komedi</p>
+    </div>
+    <div class="film-card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOsI3ifsow1dMkn69YMqeBx7t3lqXWdVU-4w&s" alt="Dram">
+      <p>Dram</p>
+    </div>
+    <div class="film-card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt3L9Oe7yrBMdI0kjPxfh7UTkJSlH8n71Cng&s" alt="Korku">
+      <p>Korku</p>
+    </div>
+    <div class="film-card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXYZ9jwgCKM57mAfr8MZwIS-wTJT-3gMoMOA&s" alt="Animasyon">
+      <p>Animasyon</p>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kayıt Ol - Film Sitesi</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    let kayit = null;
+
+    function kayitOl() {
+     
+      var isim = document.getElementById('isim').value;
+      var email = document.getElementById('email').value;
+      var sifre = document.getElementById('sifre').value;
+
+      
+      kayit = {
+        isim: isim,
+        email: email,
+        sifre: sifre
+      };
+
+      
+      document.getElementById('kayitFormu').style.display = "none";
+
+      
+      var mesajDiv = document.createElement("div");
+      mesajDiv.innerHTML = "<h3>Kayıt Başarılı!</h3><p>Ad Soyad: " + isim + "</p><p>E-posta: " + email + "</p>";
+      var silButonu = document.createElement("button");
+      silButonu.innerHTML = "Kaydı Sil";
+      silButonu.onclick = silKayit;
+      mesajDiv.appendChild(silButonu);
+      document.getElementById('sonuc').appendChild(mesajDiv);
+    }
+
+    function silKayit() {
+      
+      kayit = null;
+
+      
+      var mesajDiv = document.createElement("div");
+      mesajDiv.innerHTML = "<h3>Kaydınız Silindi!</h3>";
+      document.getElementById('sonuc').innerHTML = ""; 
+      document.getElementById('sonuc').appendChild(mesajDiv);
+
+      
+      document.getElementById('kayitFormu').style.display = "block";
+    }
+  </script>
+</head>
+<body>
+
+  <div class="navbar">
+    <h1>Film Time</h1>
+    <div>
+      <a href="index.html">Ana Sayfa</a>
+      <a href="kategoriler.html">Kategoriler</a>
+      <a href="filminceleme.html">Film İnceleme</a>
+      <a href="siteyekayit.html">Kayıt Ol</a>
+      <a href="iletisim.html">İletişim</a>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="kayit-formu" id="kayitFormu">
+      <h2>Kayıt Ol</h2>
+      <form onsubmit="event.preventDefault(); kayitOl();">
+        <label>Ad Soyad:</label>
+        <input type="text" id="isim" required>
+  
+        <label>E-posta:</label>
+        <input type="email" id="email" required>
+  
+        <label>Şifre:</label>
+        <input type="password" id="sifre" required>
+  
+        <button type="submit">Kayıt Ol</button>
+      </form>
+    </div>
+
+    <div id="sonuc"></div> 
+  </div>
+
+</body>
+</html>
